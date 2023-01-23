@@ -17,6 +17,6 @@ var numbersSheetReader = new NumbersSheetReader(quickBookReader);
 var excelReader = new ExcelReader(numbersSheetReader);
 var readService = new DataReadService(excelReader);
 
-readService.Read("abc.abc");
+readService.Read("abc.qbw");
 
 Console.Read();

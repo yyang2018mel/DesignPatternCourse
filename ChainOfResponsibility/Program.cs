@@ -1,19 +1,22 @@
-﻿
-using System;
+﻿using System;
+//using ChainOfResponsibility;
+using ChainOfResponsibility.Exercise;
 
 // Authenticator -> Logger -> Encryptor -> Compressor
 
-using ChainOfResponsibility;
+//var compressor = new Compressor(null);
+//var logger = new Logger(compressor);
+//var encryptor = new Encryptor(logger);
+//var authenticator = new Authenticator(encryptor);
 
-var compressor = new Compressor(null);
-var logger = new Logger(compressor);
-var encryptor = new Encryptor(logger);
-var authenticator = new Authenticator(encryptor);
+//var webServer = new WebServer(authenticator);
+//webServer.Handle(new HttpRequest("admin", "1234"));
 
-var webServer = new WebServer(authenticator);
+var quickBookReader = new QuickBookReader(null);
+var numbersSheetReader = new NumbersSheetReader(quickBookReader);
+var excelReader = new ExcelReader(numbersSheetReader);
+var readService = new DataReadService(excelReader);
 
-
-webServer.Handle(new HttpRequest("admin", "1234"));
+readService.Read("abc.abc");
 
 Console.Read();
-

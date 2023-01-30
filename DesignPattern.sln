@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1704.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibility", "ChainOfResponsibility\ChainOfResponsibility.csproj", "{89FE9A08-13EB-451D-BA91-A905CEE82E73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorPattern", "VisitorPattern\VisitorPattern.csproj", "{CAEB7B4D-4614-4A24-AE6F-D9E5FD6CCF47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{89FE9A08-13EB-451D-BA91-A905CEE82E73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89FE9A08-13EB-451D-BA91-A905CEE82E73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89FE9A08-13EB-451D-BA91-A905CEE82E73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAEB7B4D-4614-4A24-AE6F-D9E5FD6CCF47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEB7B4D-4614-4A24-AE6F-D9E5FD6CCF47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEB7B4D-4614-4A24-AE6F-D9E5FD6CCF47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEB7B4D-4614-4A24-AE6F-D9E5FD6CCF47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

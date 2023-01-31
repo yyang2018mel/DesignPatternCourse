@@ -3,9 +3,9 @@ namespace VisitorPattern;
 
 public class HeadingNode : IHtmlNode
 {
-    public void Highlight()
+    public void Execute(IOperation operation)
     {
-        Console.WriteLine($"Highlight {nameof(HeadingNode)}");
+        operation.Apply(this);
     }
 }
 

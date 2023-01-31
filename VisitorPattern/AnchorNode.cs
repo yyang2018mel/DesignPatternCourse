@@ -3,9 +3,9 @@ namespace VisitorPattern;
 
 public class AnchorNode : IHtmlNode
 {
-    public void Highlight()
+    public void Execute(IOperation operation)
     {
-        Console.WriteLine($"Highlight {nameof(AnchorNode)}");
+        operation.Apply(this);
     }
 }
 

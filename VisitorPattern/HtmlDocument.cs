@@ -10,10 +10,10 @@ public class HtmlDocument
         nodes.Add(node);
     }
 
-    public void Highlight()
+    public void Execute(IOperation operation)
     {
         foreach (var node in nodes)
-            node.Highlight();
+            node.Execute(operation);
     }
 }
 
